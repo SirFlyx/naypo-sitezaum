@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+
+    <title>SnakeBot - Modere o seu servidor!</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/Logo.jpg"/>
+
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+  </head>
+
+<body>
+
+  <div class="nav">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg justify-content-between">
+        <h1>SnakeBot</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars text-white" style="font-size: 18px" ></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item"><a class="nav-link" href="/">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">Vantagens</a></li>
+            <li class="nav-item"><a class="nav-link" href="/comandos">Comandos</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://discordapp.com/oauth2/authorize?client_id=664918378724720690&scope=bot&permissions=8">Convite</a></li>
+          </ul>
+        </div>
+
+        
+          <li class="nav-item"><a href="/login" class="nav-direita nav-link"><i class="fa fa-key" aria-hidden="true"></i> Login</a></li>
+        
+
+      </nav>
+    </div>
+  </div>
+
+    <section id="introducao">
+      <div class="layer">
+        
+      <div class="centralizar">
+        <img class="shape" src="img/play.png" alt="Play">
+      </div>
+
+        <img class="logo" src="img/Logo.jpg" alt="Logo">
+        <h1>SnakeBot</h1>
+        <p>Modere/divirta o seu servidor de forma fácil e rápida!</p>
+
+        <div class="row">
+            <div class="centro">
+                <a href="https://discordapp.com/oauth2/authorize?client_id=664918378724720690&scope=bot&permissions=8"><button class="convidar">Me Convide</button></a>
+                <a href="https://top.gg/bot/664918378724720690/vote"><button class="convidar">Vote em Mim</button></a>
+            </div>
+        </div>
+
+      </div>
+        <div class="onda onda1"></div>
+        <div class="onda onda2"></div>
+        <div class="onda onda3"></div>
+    </section>
+
+    <section id="comandos">
+        <div class="container">
+
+            <div class="col-md-12">
+                <div class="card">
+
+                    <p><span style="font-size: 25px;">------ [ # SnakeBot # ] ------</span><p>
+                    <h4>Estou em <strong>0</strong> servidores!<br>Tenho <strong>6</strong> sistemas completos de proteção!</h4>
+                    <p><span style="font-size: 25px;">-------------------------------</span><p>
+    
+                    <h4><span style="font-weight: bold;">🐍 Comandos de Moderação:</span></h4>
+                    <br>
+                    <ul class="fa-ul">
+                        <li>Comando de <span class="comando">ban</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">fastban</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">kick</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">fastkick</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">adv</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">advertencias</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">radv</span> carregado com sucesso!</li>
+                    </ul>
+         
+                    <ul class="fa-ul">
+                        <li>Comando de <span class="comando">slowmode</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">lock</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">unlock</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">limpar</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">notificar</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">captcha</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">tickets</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">config</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">say</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">mencionar</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">setnickname</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">editchannel</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">createchannel</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">delchannel</span> carregado com sucesso!</li>
+                    </ul>
+
+                    <h4><span style="font-weight: bold;">🐍 Comandos de Diversão:</span></h4>
+                    <br>
+                    <ul class="fa-ul">
+                        <li>Comando de <span class="comando">avatar</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">sugerir</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">servericon</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">roleinfo</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">botinfo</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">emojis</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">mchead</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">enviarart</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">mcskin</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">serverinfo</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">metas</span> carregado com sucesso!</li>
+                        <li>Comando de <span class="comando">userinfo</span> carregado com sucesso!</li>
+                    </ul>
+
+                    <h3>Terminal | Debug | Console</h3>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+  <section id="convide">
+    <div class="container">
+      <div class="row">
+
+    <div class="col-md-7">
+      <h1>Chega de ter problemas em proteger o seu servidor!</h1>
+      <p>Comece agora a defender o seu servidor de palavrões, ataques e ao mesmo tempo divirtia-o de forma fácil e rápida!</p>
+    </div>
+
+    <div class="col-md-4">
+      <div class="row">
+        <button class="me-convide">Me Convide</button>
+      </div>
+    </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3">
+          <img class="logo" src="img/Logo.jpg" alt="Logo">
+        </div>
+
+        <div class="col-md-4">
+          <h4>Links Rápidos</h4>
+        <div class="navigation">
+          <a href="/">Início</a>
+          <a href="https://discord.gg/KfaytAQ">Suporte</a>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Contactos</h4>
+        <div class="navigation">
+          <a href="https://discord.gg/KfaytAQ">Twitter</a>
+          <a href="https://discord.gg/KfaytAQ">Discord</a>
+        </div>
+        </div>
+
+        <hr>
+
+        <div class="copy">
+          <p><a href="#">SnakeBot</a> - Todos os direitos reservados.<br>Não contemos nenhuma afialiação com o Discord Inc.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

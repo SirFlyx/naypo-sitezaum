@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,200,300,400,500,600,700,800,900&display=swap');
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    overflow-x: hidden;
+    background: #282828;
+}
+
+::selection {
+  color: white;
+  background-color: rgb(74, 78, 81);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: #2b2e30;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 3px;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+/*
+# NAV BAR
+*/
+
+.nav {
+    background: rgb(26, 26, 26); 
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 1px 3px 2px black;
+    font-weight: 800;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.664);
+    margin-top: 7px;
+}
+
+.nav-direita {
+    text-align: right;
+    float: right;
+    font-weight: 500;
+}
+
+#login {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(32, 160, 235);
+    border-radius: 3px;
+    padding: 10px 30px;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+    color: white;
+    float: right;
+    margin-top: 7px;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* DROPDOWN */
+
+.dropdown {
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-menu {
+    background: rgb(20, 20, 20);
+    border: 0;
+    color: white;
+    box-shadow: 4px 4px 7px rgba(24, 24, 24, 0.664);
+    transition: 0.3s all;
+}
+
+.dropdown-item {
+    color: white;
+    transition: 0.3s all;
+}
+
+.dropdown-item:hover {
+    background: rgb(36, 36, 36);
+    color: white;
+}
+
+.fa-user {
+    margin-right: 7px;
+}
+
+/* INTRODUÇÃO */
+
+#introducao {
+    width: 100%;
+    height: auto;
+    background: rgb(26, 26, 26);
+    position: relative;
+    overflow: hidden;
+    padding: 200px 0px;
+}
+
+#introducao h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+}
+
+#introducao p {
+    text-align: center;
+    color: rgba(221, 221, 221, 0.781);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.centro {
+    display: block;
+    margin: auto;
+}
+
+#introducao .convidar {
+    background: rgb(32, 160, 235);
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 30px;
+    border: 0;
+    margin-bottom: 150px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+#introducao .convidar:hover {
+    background: rgba(44, 162, 231, 0.863);
+}
+
+#introducao .onda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/onda.png);
+    background-size: 1000px 100px;
+}
+
+#introducao .onda.onda1 {
+    animation: animate 30s linear infinite;
+    z-index: 999;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0px;
+}
+
+#introducao .onda.onda2{
+    animation: animate 15s linear infinite;
+    z-index: 998;
+    opacity: .6;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+#introducao .onda.onda3{
+    animation: animate 10s linear infinite;
+    z-index: 998;
+    opacity: .3;
+    animation-delay: -10s;
+    bottom: 30px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+#introducao .logo {
+    width: 200px;
+    border-radius: 50%;
+    border: 13px solid rgba(255, 255, 255, 0.068);
+    display: block;
+    margin: auto;
+    z-index: 999;
+}
+
+#introducao .shape {
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%,0); 
+    position: absolute; 
+    z-index: 1;
+    width: 600px;
+}
+
+@media (max-width: 991px){
+    #introducao .shape {
+        display: none;
+    }
+}
+
+/* VANTAGENS */
+
+#vantagens {
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    background: #282828;
+}
+
+#vantagens .cartao-direita {
+    margin-top: 100px;
+    background: transparent;
+}
+
+#vantagens .cartao-esquerda {
+    margin-top: 100px;
+    background: transparent;
+}
+
+#vantagens .cartao-esquerda .behind {
+    padding-left: 20px;
+    border-left: 2px solid rgb(32, 160, 235); 
+    border-radius: 3px;
+}
+
+#vantagens .cartao-direita .behind {
+    padding-right: 20px;
+    border-right: 2px solid rgb(32, 160, 235); 
+    border-radius: 3px;
+}
+
+#vantagens .cartao-esquerda h1 {
+    padding: 30px;
+    text-align: left;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    margin-bottom: 0;
+}
+
+#vantagens .cartao-esquerda p {
+    text-align: left;
+    color: rgba(204, 204, 204, 0.767);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16.5px;
+}
+
+#vantagens .cartao-direita h1 {
+    padding: 30px;
+    text-align: right;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    margin-bottom: 0;
+}
+
+#vantagens .cartao-direita p {
+    text-align: right;
+    color: rgba(204, 204, 204, 0.767);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16.5px;
+}
+
+#vantagens .config {
+    width: 100%;
+    border-radius: 6px;
+    height: auto;
+    display: block;
+    margin-right: auto;
+}
+
+/* COMANDOS */
+
+#comandos {
+    width: 100%;
+    height: auto;
+}
+
+#comandos .card {
+    width: 100%;
+    background: #1d1d1d;
+    border-radius: 2px;
+}
+
+#comandos .card p {
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+#comandos .card li {
+    font-size: 15px;
+    padding: 2px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#comandos .card h4 {
+    font-size: 15px;
+    color: white;
+    padding-left: 15px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#comandos .card h5 {
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#comandos .card h3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    font-size: 15px;
+    padding-right: 15px;
+    font-weight: 400;
+}
+
+.comando {
+    background: #1d1d1d;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 2px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* CONVIDE */
+
+#convide {
+    height: auto;
+    width: 100%;
+    background: #282828;
+    background: url(../img/bot.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#convide h1 {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 90px;
+}
+
+#convide p {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(207, 207, 207, 0.61);
+    margin-top: 15px;
+}
+
+#convide .me-convide {
+    background: rgb(32, 160, 235); 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: auto;
+    margin-right: 10px;
+    margin-top: 115px;
+    border-radius: 3px;
+    border: 0;
+    padding: 15px 40px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(20, 29, 34, 0.774); 
+}
+
+/* DASHBOARD */
+
+#dashboard {
+    background: rgb(26, 26, 26);
+}
+
+#dashboard .icon {
+    border-radius: 100%;
+    border: 7px solid rgb(54, 54, 54);
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#dashboard h1 {
+    text-align: center;
+    color: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#dashboard .desc p {
+    color: #d6d6d6d0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#dashboard .card {
+    border-radius: 5px;
+    padding: 5px;
+    background: rgb(26, 26, 26);
+    border: 0;
+    transition: 0.3s all;
+    margin-bottom: 10px;
+}
+
+#dashboard .card:hover {
+    background: rgba(41, 41, 41, 0.877);
+    box-shadow: 6px 6px 7px rgba(17, 17, 17, 0.692);
+}
+
+#dashboard .icon-sv {
+    border-radius: 40%;
+    width: 69px;
+    height: 69px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#dashboard .nome h2 {
+    text-align: left;
+    text-decoration: none;
+    color: #f1f1f1;
+    margin-top: 30px;
+    padding-left: 15px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#dashboard .nome p {
+    text-align: left;
+    text-decoration: none;
+    color: #cacacac5;
+    padding-left: 13px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#dashboard .setup a {
+    background: #414141;
+    float: right;
+    text-align: right;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#dashboard a {
+    text-decoration: none;
+}
+
+/* MANAGE */
+
+#manage {
+    height: 100vh;
+    width: 100%;
+    background: rgb(26, 26, 26);
+}
+
+#manage .titulo h1 {
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+#manage .icon {
+    border-radius: 100%;
+    border: 7px solid rgb(54, 54, 54);
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+#manage p {
+    text-align: center;
+    color: rgba(231, 231, 231, 0.788);
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-top: 0;
+}
+
+/* PERFIL */
+
+#perfil {
+    width: 100%;
+    height: 100vh;
+    background: rgb(26, 26, 26);
+}
+
+#perfil .card {
+    background: #1d1d1d;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 8px 8px 15px rgba(14, 14, 14, 0.849);
+    transition: 0.3s all;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+#perfil .card-aviso {
+    background: rgba(170, 49, 49, 0.534);
+    border-radius: 5px;
+    border: 2px dashed rgb(153, 21, 21);
+    transition: 0.3s all;
+    margin-top: 40px;
+}
+
+#perfil .card-aviso h1 {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#perfil .avatar {
+    border-radius: 100%;
+    border: 7px solid rgb(54, 54, 54);
+    margin-bottom: 0;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;;
+}
+
+#perfil .usuario p {
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#perfil .info {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+/* PERFIL - BIO */
+
+#perfil .card-bio {
+    background: #1d1d1d;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 8px 8px 15px rgba(14, 14, 14, 0.849);
+    transition: 0.3s all;
+    padding: 50px;
+    margin-top: 40px;
+}
+
+#perfil .card-bio h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    margin-top: -15px;
+}
+
+#perfil .sub-card {
+    background: #181818;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 20px 20px 30px inset rgba(20, 20, 20, 0.801);
+    transition: 0.3s all;
+    padding: 30px;
+}
+
+#perfil .sub-card p {
+    text-align: left;
+    padding: 5px;
+    color: #f3f3f3d7;
+    font-family: "Lucida Console", Monaco, monospace;
+    margin-bottom: 0;
+}
+
+/* FOOTER */
+
+#footer {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background: #282828;
+    margin-top: 100px;
+}
+
+#footer .logo {
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.068);
+}
+
+#footer h4 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+#footer .navigation a {
+    color: rgba(189, 189, 189, 0.705);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s all;
+    display: block;
+}
+
+#footer a:hover {
+    color: white;
+}
+
+#footer hr {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.226);
+    margin-bottom: 30px;
+}
+
+#footer .copy {
+    width: 100%;
+    height: auto;
+}
+
+#footer .copy p {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.61);
+}
+
+#footer .copy a {
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+    #footer .logo {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
